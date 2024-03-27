@@ -1,5 +1,7 @@
-from nsepy import get_history
-from datetime import date
+from nsepython import equity_history
 
-data = get_history(symbol="NIFTY", start=date(2015,1,1), end=date(2015,1,31))
-print(data[["Close"]].plot())
+symbol = "TCS"
+series = "EQ"
+start_date = "14-03-2024"
+end_date ="14-03-2024"
+print(equity_history(symbol,series,start_date,end_date))
